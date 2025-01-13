@@ -1,16 +1,28 @@
-
+let computerChoice;
+let humanChoice;
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     hand = Math.floor(Math.random() * 3 );
 
     if (hand === 0) {
-        console.log("Rock");
+        hand = "Rock";
     } else  if (hand === 1) {
-        console.log("Paper");
+        hand = "Paper";
     } else {
-        console.log("Scissors");
+        hand = "Scissors";
     }
+    return computerChoice = hand;
+}
+
+function getHumanChoice() {
+return humanChoice = prompt("Rock Paper Scissors?");
 
 }
 
-console.log(getComputerChoice());
+getHumanChoice();
+getComputerChoice() 
+
+console.log("Human: " + humanChoice);
+console.log("Computer: " + computerChoice);
