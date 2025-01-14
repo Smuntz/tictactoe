@@ -19,7 +19,6 @@ function getComputerChoice() {
 function getHumanChoice() {
     humanChoice = prompt("Choose: Rock Paper Scissors?");
     return humanChoice.toLowerCase();
-
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -39,9 +38,7 @@ function playRound(humanChoice, computerChoice) {
     } else {
         computerScore++;
         console.log(`You Loose! ${computerChoice} beasts ${humanChoice}`)
-
     }
-
 }
 
 function playGame() {
@@ -64,6 +61,7 @@ function playGame() {
     computerScore = 0;
     playGame();
 }
+
 playGame();
 
 
